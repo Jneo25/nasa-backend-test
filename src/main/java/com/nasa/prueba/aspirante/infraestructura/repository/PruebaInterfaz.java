@@ -1,5 +1,9 @@
 package com.nasa.prueba.aspirante.infraestructura.repository;
 
-public interface PruebaInterfaz {
+import org.springframework.data.repository.CrudRepository;
+
+import com.nasa.prueba.aspirante.dominio.entities.PruebaEntity;
+
+public interface PruebaInterfaz extends CrudRepository<PruebaEntity, Long> {
 
 }
